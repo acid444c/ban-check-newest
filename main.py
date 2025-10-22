@@ -54,7 +54,7 @@ async def change_language(ctx, lang_code: str):
     message = "✅ Language set to English." if lang_code == 'en' else "✅ Langue définie sur le français."
     await ctx.send(f"{ctx.author.mention} {message}")
 
-@bot.command(name="sigma")
+@bot.command(name="id")
 async def check_ban_command(ctx):
     content = ctx.message.content
     user_id = content[3:].strip()
@@ -133,6 +133,7 @@ async def check_ban_command(ctx):
 
 
 bot.run(TOKEN)
+
 
 
 
