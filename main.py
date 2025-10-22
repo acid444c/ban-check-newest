@@ -54,7 +54,7 @@ async def change_language(ctx, lang_code: str):
     message = "✅ Language set to English." if lang_code == 'en' else "✅ Langue définie sur le français."
     await ctx.send(f"{ctx.author.mention} {message}")
 
-@bot.command(name="id")
+@bot.command(name="sigma")
 async def check_ban_command(ctx):
     content = ctx.message.content
     user_id = content[3:].strip()
@@ -113,7 +113,7 @@ async def check_ban_command(ctx):
             )
             # embed.set_image(url="https://i.postimg.cc/Nf46VNGZ/standard.gif")
             file = discord.File("assets/banned.gif", filename="banned.gif")
-            embed.set_image(url="")
+            embed.set_image(url="attachment://banned.gif")
         else:
             embed.title = "**▌ Clean Account ✅ **" if lang == "en" else "**▌ Compte non banni ✅ **"
             embed.description = (
@@ -125,7 +125,7 @@ async def check_ban_command(ctx):
             )
             # embed.set_image(url="https://i.postimg.cc/0Q2ZWLDD/standard-4.gif")
             file = discord.File("assets/notbanned.gif", filename="notbanned.gif")
-            embed.set_image(url="")
+            embed.set_image(url="attachment://notbanned.gif")
 
         embed.set_thumbnail(url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
         embed.set_footer(text="DEVELOPED BY **unknown** •")
@@ -133,6 +133,7 @@ async def check_ban_command(ctx):
 
 
 bot.run(TOKEN)
+
 
 
 
