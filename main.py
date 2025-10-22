@@ -111,7 +111,7 @@ async def check_ban_command(ctx):
                 f"**• {'Player ID' if lang == 'en' else 'ID du joueur'} :** `{id_str}`\n"
                 f"**• {'Region' if lang == 'en' else 'Région'} :** `{region}`"
             )
-            # embed.set_image(url="")
+            # embed.set_image(url="https://i.postimg.cc/Nf46VNGZ/standard.gif")
             file = discord.File("assets/banned.gif", filename="banned.gif")
             embed.set_image(url="")
         else:
@@ -123,7 +123,7 @@ async def check_ban_command(ctx):
                 f"**• {'Player ID' if lang == 'en' else 'ID du joueur'} :** `{id_str}`\n"
                 f"**• {'Region' if lang == 'en' else 'Région'} :** `{region}`"
             )
-            # embed.set_image(url="")
+            # embed.set_image(url="https://i.postimg.cc/0Q2ZWLDD/standard-4.gif")
             file = discord.File("assets/notbanned.gif", filename="notbanned.gif")
             embed.set_image(url="")
 
@@ -133,5 +133,6 @@ async def check_ban_command(ctx):
 
 
 bot.run(TOKEN)
+
 
 
