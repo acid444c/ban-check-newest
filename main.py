@@ -128,11 +128,12 @@ async def check_ban_command(ctx):
             embed.set_image(url="attachment://notbanned.gif")
 
         embed.set_thumbnail(url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
-        embed.set_footer(text="DEVELOPED BY **unknown** •")
+        embed.set_footer(text="DEVELOPED BY Unknown x!ter•")
         await ctx.send(f"{ctx.author.mention}", embed=embed ,file=file)
 
 
 bot.run(TOKEN)
+
 
 
 
